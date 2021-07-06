@@ -208,6 +208,65 @@ article h2, article p {
     width: 100%;
     margin: 20px;
 }
+
+.secaoCalendar h2, .secaoCalendar p {
+    margin: 20px;
+}
+
+.calendario {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.calendario li {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.calendario-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    color: #FFF;
+    background-color: #00043e;
+    font-size: 36px;
+}
+
+.calendario-data-rodape {
+    font-size: 36px;
+}
+
+.calendario li {
+    border: 1px solid #00043e;
+}
+
+li h3 {
+    font-size: 19px;
+}
+
+li span {
+    display: flex;
+    justify-content: center;
+    color: #818181;
+}
+
+li p {
+    font-size: 15px;
+    color: #818181;
+}
+
+li button {
+    font-size: 32px;
+    background-color: #007aff;
+    color: #FFF;
+    border-radius: 10px;
+    margin: 15px;
+}
+
 /* INICIAL */
 
 /* EXTRAS */
