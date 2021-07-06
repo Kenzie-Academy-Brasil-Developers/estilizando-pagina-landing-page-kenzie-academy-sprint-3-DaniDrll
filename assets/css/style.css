@@ -43,7 +43,7 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family:' lato ' sans-serif;
     list-style: none;
 }
 img{
@@ -67,29 +67,73 @@ div.container{
     max-width: 1140px;
     margin:0 auto;
 }
-/* GERAL */
+
+h2 {
+    font-family: "Montserrat"sans-serif;
+}
+
   
-/* HTML */
+
 html{}
-/* HTML */
+
   
-/* BODY */
+
 body{}
-/* BODY */
+
   
-/* HEADER */
-header{}
-/* HEADER */
-  
-/* FOOTER */
+
+header{
+    background-color: var(--color-azulescuro);
+}
+
+.large-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.large-container img {
+    width: 70px;
+}
+
+.large-container nav {
+    display: flex;
+}
+
+.large-container ul {
+    display: flex;
+    align-items: center;
+}
+
+.large-container li a {
+    text-decoration: none;
+    color: var(--color-branco);
+    margin: 10px;
+    font-size: 13px;
+}
+.large-container a:hover {
+    border: 1px solid white; padding: 10px;
+    transition: 0.7s;
+    border-radius: 20px;
+}
+
+.large-container a:active {
+    color: green;
+}
+
+.large-container figure figcaption {
+    display: none;
+}
+
+
+
 footer{}
-/* FOOTER */
 
-/* INICIAL */
+
+
 main{}
-/* INICIAL */
 
-/* EXTRAS */
+
+
 
 /* para estilizar a scrollbar */
 ::-webkit-scrollbar{}
