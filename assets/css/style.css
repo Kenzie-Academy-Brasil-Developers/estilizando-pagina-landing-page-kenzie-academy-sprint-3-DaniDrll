@@ -68,6 +68,7 @@ html{}
   
 /* BODY */
 body{}
+
 /* BODY */
   
 /* HEADER */
@@ -80,6 +81,133 @@ footer{}
 
 /* INICIAL */
 main{}
+
+
+.inicial {
+    display: flex;
+}
+
+section.secaoDestaque {
+    display: flex;
+    height: 600px;
+    width: 100%;
+    background-image: url(../img/background-destaque.webp);
+    flex-direction: column;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+.secaoDestaque h2 {
+    font-size: 63px;
+    text-transform:capitalize;
+}
+
+.secaoDestaque p {
+    font-size: 21px;
+}
+
+.secaoDestaque form {
+    font-size: 14px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    /* padding: 100px; */
+}
+
+article.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.secaoSobre {
+    display: flex;
+}
+
+.secaoSobre h2 {
+    font-size: 24px;
+}
+
+.secaoSobre p, .secaoSobre span {
+    font-size: 19px;
+}
+
+.flex-col {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+
+    padding: 100px;
+    text-align: start;
+}
+
+.flex-col span {
+    margin: 10px;
+}
+
+.flex-col h2 {
+    margin: 10px;
+}
+
+figure img {
+    height: 250px;
+}
+
+figcaption {
+    display: none;
+}
+
+#colgrey {
+    background-color: #E6E6E6;
+}
+
+.button__python {
+    background-color: #FFFFFF;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.button__python:hover {
+    background-color: #E6E6E6;
+}
+
+
+.secaoCursos {
+    width: 100%;
+}
+
+.secaoCursos ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.secaoCursos li {
+    width: 33%;
+    align-items: center;
+    justify-content: center;
+
+    margin: 20px 0;
+}
+
+.secaoCursos img {
+    height: 200px
+}
+
+article h2, article p {
+    width: 100%;
+    margin: 20px;
+}
 /* INICIAL */
 
 /* EXTRAS */
