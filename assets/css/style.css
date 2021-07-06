@@ -124,11 +124,91 @@ header{
     display: none;
 }
 
+.secaoContato {
+    background-color: #e6e6e6;
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+}
+ .secaoContato-informacoes {    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 300px;
+    padding: 60px;
+    width: 100%;
+ }
+ .secaoContato-informacoes p {
+     color: var(--color-cinza-claro);
+     padding-top: 30px;
+ }
+
+ .secaoContato-informacoes li {
+     padding-top: 20px;
+ }
+
+ .secaoContato-informacoes li a {
+     text-decoration: none;
+     color: var(--color-cinza-claro);
+ }
+
+ .box-form {
+     display: flex;
+     flex-direction: column;
+     justify-content:center;
+     height: 300px;
+     padding: 60px;
+ }
+
+ .box-form h2 {
+     font-size: 30px;
+     padding-left: 5px;
+
+ }
+ 
+ .form-input-model {
+    margin: 10px;
+ }
+
+ .botao {
+     display: flex;
+    position: relative;
+    left: 325px;
+    bottom: 40px;
+ }
+
+ .botao input {
+    font-size: 10px;
+    padding: 0px 10px
+ }
+
+ textarea {
+     width: 300px;
+     height: 100px;
+ }
+
+ label {
+     display: none;
+ }
 
 
-footer{}
 
 
+
+footer{
+    height: 300px;
+    text-align: center;
+    width: auto;
+}
+footer p {
+    padding-top: 10%;
+    font-size: 12px;
+}
+
+footer p a {
+    text-decoration: none;
+    color: #007aff;
+}
 
 main{}
 

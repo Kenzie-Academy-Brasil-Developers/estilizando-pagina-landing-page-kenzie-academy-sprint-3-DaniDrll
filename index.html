@@ -24,7 +24,7 @@
       <!-- MENU DE NAVEGAÇÃO -->
       <nav>
         <ul>
-          <li><a href="#1">Sobre a Kenzie</a></li>
+          <li>><a href="#1">Sobre a Kenzie</a></li>
           <li><a href="#2">Agenda</a></li>
           <li><a href="#3">Contato</a></li>
         </ul>
@@ -226,28 +226,29 @@
 
         <!-- COLUNA LADO DIRETO -->
         <div class="flex-col">
+        
           
-          <h2>Contact</h2>
-          
-          <form action="">
-
+          <form action="form-sec">
+        <div class="box-form">
+            <h2>Contact</h2>
             <div class="form-input-model">
-              <label for="nome">Nome</label>
+              <label class="one" for="nome">Nome</label>
               <input type="text" placeholder="Name" id="nome" name="nome">
             </div>
 
             <div class="form-input-model">
-              <label for="email">E-mail</label>
+              <label class="two" for="email">E-mail</label>
               <input type="text" placeholder="E-mail" id="email" name="email">
             </div>
 
             <div class="form-input-model">
               <label for="mensagem">E-mail</label>
-              <textarea name="mensagem" id="mensagem"></textarea>
+              <textarea name="mensagem" placeholder="commit" id="mensagem"></textarea>
             </div>
-
+          </div>
+          <div class="botao">
             <input type="submit" value="Send">
-
+          </div>
           </form>
 
         </div>
