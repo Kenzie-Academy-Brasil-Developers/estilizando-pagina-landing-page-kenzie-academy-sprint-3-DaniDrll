@@ -104,10 +104,26 @@ section.secaoDestaque {
 
 .secaoDestaque p {
     font-size: 21px;
+    margin: 20px;
 }
 
-.secaoDestaque form {
+.secaoDestaque input {
+    width: 300px;
+    margin: 5px 0;
+}
+
+.secaoDestaque button {
     font-size: 14px;
+    margin: 5px 0;
+    background-color: #007aff;
+    color: #FFF;
+    border-radius: 5px;
+    border: none;
+}
+
+.secaoDestaque button:hover {
+    background-color: #FFF;
+    color: #007aff;
 }
 
 main {
@@ -283,8 +299,8 @@ li button {
 /* EXTRAS */
   
 
-/* MEDIA QUERIES */
-    @media screen and (min-width: 400px) {}
-  
-    @media screen and (min-width: 800px) {}
+/* MEDIA QUERIES */  
+    @media screen and (min-width: 800px) {
+
+    }
 /* MEDIA QUERIES */
