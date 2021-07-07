@@ -29,14 +29,21 @@ family=Lato -> Títulos, textos
 /* FONTS */
 
 /* VARIÁVEIS */
-:root{}
+:root{
+    --color-branco: #ffffff;
+    --color-azulclaro:#007aff;
+    --color-azulescuro:#00043e;
+    --color-cinza:#303030;
+    --color-cinza-claro:#818181;
+    
+}
   
 /* GERAL */
 html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family:' lato ' sans-serif;
     list-style: none;
 }
 img{
@@ -60,29 +67,167 @@ div.container{
     max-width: 1140px;
     margin:0 auto;
 }
-/* GERAL */
+
+h2 {
+    font-family: "Montserrat"sans-serif;
+}
+
   
-/* HTML */
+
 html{}
-/* HTML */
+
   
-/* BODY */
+
 body{}
-/* BODY */
-  
-/* HEADER */
-header{}
-/* HEADER */
-  
-/* FOOTER */
-footer{}
-/* FOOTER */
 
-/* INICIAL */
+  
+
+header{
+    background-color: var(--color-azulescuro);
+}
+
+.large-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.large-container img {
+    width: 70px;
+}
+
+.large-container nav {
+    display: flex;
+}
+
+.large-container ul {
+    display: flex;
+    align-items: center;
+}
+
+.large-container li a {
+    text-decoration: none;
+    color: var(--color-branco);
+    margin: 10px;
+    font-size: 13px;
+}
+.large-container a:hover {
+    border: 1px solid white; padding: 10px;
+    transition: 0.7s;
+    border-radius: 20px;
+}
+
+.large-container a:active {
+    color: green;
+}
+
+.large-container figure figcaption {
+    display: none;
+}
+
+.secaoContato {
+    background-color: #e6e6e6;
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+}
+ .secaoContato-informacoes {    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 300px;
+    padding: 60px;
+    width: 100%;
+ }
+ .secaoContato-informacoes p {
+     color: var(--color-cinza-claro);
+     padding-top: 30px;
+ }
+
+ .secaoContato-informacoes li {
+     padding-top: 20px;
+ }
+
+ .secaoContato-informacoes li a {
+     text-decoration: none;
+     color: var(--color-cinza-claro);
+ }
+
+ .form-sec {
+     display: flex;
+     align-items: center;
+
+ }
+
+ form {
+     position:relative;
+     top: 55px;
+ }
+
+ form h2 {
+     font-size: 32px;
+     margin-left: 15px;
+ }
+
+ .flex-col2{
+     display: flex;
+     
+ }
+
+ .flex-col2 .box-form {
+     display: flex;
+ }
+
+ .botao input {
+    font-size: 10px;
+    padding: 0px 10px;
+    width: 50px;
+    position: relative;
+    left: 600px;
+ }
+
+ textarea {
+     width: 650px;
+     height: 100px;
+     border: none;
+     margin-left: 10px;
+ }
+
+ label {
+     display: none;
+ }
+
+ input {
+     border: none;
+     margin: 10px;
+     width: 315px;
+ }
+
+.secaoContato-informacoes li img {
+    width: 20px;
+    margin-right: 10px;
+    position: relative;
+    top: 3px;
+}
+
+footer{
+    height: 300px;
+    text-align: center;
+    width: auto;
+}
+footer p {
+    padding-top: 10%;
+    font-size: 12px;
+}
+
+footer p a {
+    text-decoration: none;
+    color: #007aff;
+}
+
 main{}
-/* INICIAL */
 
-/* EXTRAS */
+
+
 
 /* para estilizar a scrollbar */
 ::-webkit-scrollbar{}
@@ -96,8 +241,25 @@ main{}
 /* EXTRAS */
   
 
-/* MEDIA QUERIES */
-    @media screen and (min-width: 400px) {}
-  
-    @media screen and (min-width: 800px) {}
+/* MEDIA QUERIES */  
+@media only screen and (max-width: 800px) {
+    .flex-col {
+        width: 100%;
+    }
+
+    .secaoCursos li {
+        width: 100%;
+    }
+
+    .calendario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+    }
+
+    .calendario li {
+        width: 35%;
+        margin: 30px 0;
+    }
+}
 /* MEDIA QUERIES */
