@@ -51,6 +51,11 @@ img{
 }
 div.flex{
     display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
 }
 div.full-container{
     width: 100%;
@@ -61,6 +66,7 @@ div.large-container{
     width: 100%;
     max-width: 1170px;
     margin:0 auto;
+    height: 100px;
 }
 div.container{
     width: 100%;
@@ -69,7 +75,7 @@ div.container{
 }
 
 h2 {
-    font-family: "Montserrat"sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
   
@@ -78,12 +84,21 @@ html{}
 
   
 
-body{}
+body{
+    font-family: 'Lato', sans-serif;
+}
 
-  
+.topo {
+    height: auto;
+}
+.large-container figure img {
+    height: auto;
+    margin-top: 10px;
+}
 
 header{
     background-color: var(--color-azulescuro);
+    height: 200px;
 }
 
 .large-container {
@@ -92,7 +107,7 @@ header{
 }
 
 .large-container img {
-    width: 70px;
+width: 70px;
 }
 
 .large-container nav {
@@ -125,18 +140,17 @@ header{
 }
 
 .secaoContato {
+    width: 100vw;
     background-color: #e6e6e6;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
     font-size: 15px;
+    margin-top: 20px;
+    height: 400px;
 }
  .secaoContato-informacoes {    
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    height: 300px;
-    padding: 60px;
-    width: 100%;
  }
  .secaoContato-informacoes p {
      color: var(--color-cinza-claro);
@@ -152,54 +166,71 @@ header{
      color: var(--color-cinza-claro);
  }
 
+
+
  .form-sec {
      display: flex;
-     align-items: center;
-
  }
 
  form {
-     position:relative;
-     top: 55px;
+     
  }
 
  form h2 {
      font-size: 32px;
      margin-left: 15px;
+     text-align: left;
  }
 
- .flex-col2{
+
+
+ .flex-col3{
+     text-align: left;
      display: flex;
-     
  }
 
- .flex-col2 .box-form {
+.flex-col4 {
+
+}
+
+ .box-form {
      display: flex;
+     width: 100%;
  }
 
+ .commit {
+    display: flex;
+    width: 100%;
+ }
+.botao {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
  .botao input {
     font-size: 10px;
     padding: 0px 10px;
     width: 50px;
-    position: relative;
-    left: 600px;
  }
 
  textarea {
-     width: 650px;
-     height: 100px;
      border: none;
-     margin-left: 10px;
+     height: 120px;
+     width: 500px;
  }
 
  label {
      display: none;
  }
-
- input {
+.form-input-model{
+    margin-bottom: 10px;
+    width: 50%;
+}
+.form-input-model input {
      border: none;
-     margin: 10px;
-     width: 315px;
+     width: 98%;
+     
+
  }
 
 .secaoContato-informacoes li img {
@@ -214,6 +245,13 @@ footer{
     text-align: center;
     width: auto;
 }
+
+#ceta {
+    font-size: 32px;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
 footer p {
     padding-top: 10%;
     font-size: 12px;
@@ -223,7 +261,7 @@ footer p a {
     text-decoration: none;
     color: #007aff;
 }
-
+///////////////////////////////////////////////////////////////////
 .inicial {
     display: flex;
 }
@@ -304,7 +342,6 @@ article.flex {
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
-
     padding: 100px;
     text-align: start;
 }
@@ -353,7 +390,6 @@ figcaption {
     width: 33%;
     align-items: center;
     justify-content: center;
-
     margin: 20px 0;
 }
 
@@ -459,5 +495,17 @@ li button {
         width: 35%;
         margin: 30px 0;
     }
+
+    .flex {
+    display: flex;
+    flex-direction: column;
+    }
+
+    .flex h2 {
+        position: relative;
+        bottom: 185px;
+        left: 160px;
+    }
+
 }
 /* MEDIA QUERIES */
